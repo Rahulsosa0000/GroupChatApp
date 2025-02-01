@@ -1,0 +1,22 @@
+<div class="chat-container">
+    <div *ngIf="!isConnected()" class="join-container">
+      <h2>Enter Your Name</h2>
+      <input type="text" [(ngModel)]="username" placeholder="Your Name" />
+      <button (click)="connect()">Join Chat</button>
+    </div>
+  
+    <div *ngIf="isConnected()" class="chat-box">
+      <h2>Welcome, {{ username() }}</h2>
+      <button class="leave-btn" (click)="disconnect()">Leave Chat</button>
+  
+      <div class="messages">
+        <div *ngFor="let msg of messages()" class="message">
+          <b>{{ msg.sender }}:</b> {{ msg.content }}
+        </div>
+      </div>
+  
+      <input type="text" [(ngModel)]="message" placeholder="Type a message..." />
+      <button (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+  

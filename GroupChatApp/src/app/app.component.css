@@ -1,0 +1,42 @@
+/* .chat-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .join-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .join-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .chat-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messages {
+    border: 1px solid #ddd;
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .message {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .leave-btn {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+   */
